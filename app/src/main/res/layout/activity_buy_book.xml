@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradient2"
+    tools:context=".BuyBookActivity">
+
+
+    <LinearLayout
+        android:id="@+id/adder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/roundcard"
+        android:orientation="vertical"
+        android:paddingTop="14dp"
+        android:paddingBottom="34dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingLeft="9dp">
+
+            <TextView
+                android:id="@+id/bookname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_marginBottom="0dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:padding="5dp"
+                android:text="Add name"
+                android:textColor="@color/orange"
+                android:textSize="32dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/bookdesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_marginBottom="0dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:padding="5dp"
+                android:text="Description" />
+
+            <TextView
+                android:id="@+id/bookprice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:padding="5dp"
+                android:text="Price (in Rs)"
+                android:textSize="23dp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/sell"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="22dp"
+                android:layout_marginBottom="18dp"
+                android:background="@drawable/round_btn_wa"
+                android:drawableLeft="@drawable/wa"
+                android:paddingLeft="80dp"
+                android:paddingTop="6dp"
+                android:paddingRight="90dp"
+                android:paddingBottom="6dp"
+                android:text="Contact buyer"
+                android:visibility="visible"
+                android:textAllCaps="false"
+                android:textColor="@color/green_text"
+                android:textSize="14dp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/sold"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="22dp"
+                android:layout_marginBottom="18dp"
+                android:background="@drawable/round_btn_wa"
+                android:paddingLeft="80dp"
+                android:paddingTop="6dp"
+                android:paddingRight="90dp"
+                android:paddingBottom="6dp"
+                android:text="Mark sold"
+                android:visibility="gone"
+                android:textAllCaps="false"
+                android:textColor="@color/green_text"
+                android:textSize="14dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/seller"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:paddingTop="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/seller_dp"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/user" />
+
+        <TextView
+            android:id="@+id/seller_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="TextView"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/seller_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="TextView" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageButton"
+        android:layout_width="368dp"
+        android:layout_height="233dp"
+        android:layout_gravity="center"
+        android:layout_margin="0dp"
+        android:layout_marginTop="50dp"
+        android:layout_weight="1"
+        android:padding="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/adder"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seller"
+        app:srcCompat="@drawable/book" />
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/back" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

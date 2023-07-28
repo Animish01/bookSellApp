@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Sell books</string>
+    <string name="buy"><u>Buy books</u></string>
+    <string name="sell"><u>Add books</u></string>
+    <string name="myBooks"><u>My books</u></string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

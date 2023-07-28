@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "959120994849",
+    "project_id": "sell-books1",
+    "storage_bucket": "sell-books1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:959120994849:android:83ae4d7f9d51eb293c6960",
+        "android_client_info": {
+          "package_name": "com.example.sellbooks"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "959120994849-5kg084o8h61mgnr2a60spevbu5ghudev.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCcrxKoCQD2DQNG8zZnf2n3nWq6XUV96oU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "959120994849-5kg084o8h61mgnr2a60spevbu5ghudev.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
